@@ -1,39 +1,84 @@
-# Composite Maker
+<!-- Banner -->
+<p align="center">
+  <img src="Screenshots/banner.png" width="800" alt="Composite Maker Banner">
+</p>
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
-![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey.svg)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg)
+<h1 align="center">📸 Composite Maker</h1>
+<p align="center">
+  A professional tool to generate model composites (vertical & horizontal) using Python, Tkinter and Pillow.
+</p>
 
-A Python GUI tool to generate model composites using Tkinter and Pillow.
-
-Composite Maker allows users to create professional model composites (vertical and horizontal formats) using customizable templates, images, and text fields.  
-It is designed to be simple, intuitive, and fully editable, making it ideal for agencies, photographers, and creators.
-
----
-
-## 📸 Screenshots
-
-### 🖥️ Interface
-![Interface](Screenshots/Interface.png)
-
-### 📐 Horizontal Composite Example
-![Horizontal Composite](Screenshots/Lena_Hart_Horizontal.png)
-
-### 📏 Vertical Composite Example
-![Vertical Composite](Screenshots/Lena_Hart_Vertical.png)
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10+-blue.svg">
+  <img src="https://img.shields.io/badge/License-MIT-green.svg">
+  <img src="https://img.shields.io/badge/Platform-Windows-lightgrey.svg">
+  <img src="https://img.shields.io/badge/Status-Active-brightgreen.svg">
+</p>
 
 ---
 
-## ✨ Features
+## 🎥 Demo (GIF)
 
-- Generate **vertical** and **horizontal** model composites  
-- Simple and intuitive **Tkinter GUI**  
-- Uses **Pillow** for image processing  
-- Customizable templates  
-- Automatic text placement  
-- Supports PNG templates and custom fonts  
-- Includes placeholder logo and Commissioner font family  
+<p align="center">
+  <img src="Screenshots/demo.gif" width="450" alt="Composite Maker Demo">
+</p>
+
+---
+
+## ✨ Why Composite Maker?
+
+Model agencies, photographers and creators often need **clean, consistent and professional composites** for:
+
+- Instagram portfolios  
+- Facebook posts  
+- Model submissions  
+- Casting presentations  
+- Digital comp cards  
+
+Composite Maker solves this by providing:
+
+- A **simple GUI**
+- **Two professional layouts** (vertical & horizontal)
+- **Editable templates**
+- **Automatic text placement**
+- **High‑quality export**
+
+All in a lightweight, open‑source Python tool.
+
+---
+
+## 🖥️ Interface
+
+<p align="center">
+  <img src="Screenshots/Interface.png" width="600">
+</p>
+
+---
+
+## 📐 Composite Examples
+
+### Horizontal
+<p align="center">
+  <img src="Screenshots/Lena_Hart_Horizontal.png" width="600">
+</p>
+
+### Vertical
+<p align="center">
+  <img src="Screenshots/Lena_Hart_Vertical.png" width="600">
+</p>
+
+---
+
+## 🚀 Features
+
+- ✔ Generate **vertical** and **horizontal** model composites  
+- ✔ Clean and intuitive **Tkinter GUI**  
+- ✔ Image processing powered by **Pillow**  
+- ✔ Fully **customizable PNG templates**  
+- ✔ Automatic text fields (name, height, size, eyes, hair)  
+- ✔ Supports custom fonts (Commissioner included)  
+- ✔ Includes placeholder logo  
+- ✔ Ready for social media export  
 
 ---
 
@@ -42,8 +87,8 @@ It is designed to be simple, intuitive, and fully editable, making it ideal for 
 ```
 CompositeMaker/
 │
-├── create_composites.py
-├── create_composites_instagram.py
+├── create_composites.py                # Horizontal composite
+├── create_composites_instagram.py      # Vertical composite
 │
 ├── Assets/
 │   ├── template.png
@@ -54,93 +99,97 @@ CompositeMaker/
 ├── Screenshots/
 │   ├── Interface.png
 │   ├── Lena_Hart_Vertical.png
-│   └── Lena_Hart_Horizontal.png
+│   ├── Lena_Hart_Horizontal.png
+│   └── demo.gif   <-- Add your GIF here
 │
 ├── requirements.txt
 └── README.md
 ```
 
+---
+
 ## 🛠 Installation
 
 Clone the repository:
 
-```
+```bash
 git clone https://github.com/Rodrigovonhorn/CompositeMaker.git
 cd CompositeMaker
 ```
 
 Install dependencies:
 
-```
+```bash
 pip install -r requirements.txt
 ```
 
-> Tkinter is included by default in most Python installations on Windows.
+Tkinter is included by default on Windows.
 
 ---
 
 ## ▶️ How to Use
 
-Run the main script:
-
-```
+### Horizontal Composite
+```bash
 python create_composites.py
 ```
 
-Or the Instagram version:
-
-```
+### Vertical Composite (Instagram)
+```bash
 python create_composites_instagram.py
 ```
 
-Then:
+### Steps
 
-1. Choose the script version
-2. Fill in the text fields (name, height, size, eyes and hair)  
-3. Select your model photos  
-4. Generate the composite  
-5. View the final image  
+1. Fill in the text fields (name, height, size, eyes, hair)  
+2. Select your model photos  
+3. Generate the composite    
 
 ---
 
 ## 🎨 Customizing Templates
 
-You can edit the PNG templates using any image editor:
+Templates can be edited using:
 
-- **Figma**  
-- **Photoshop**  
-- **GIMP**  
-- **Photopea (free online)**  
+- Figma  
+- Photoshop  
+- GIMP  
+- Photopea (free online)
 
-To customize:
+Steps:
 
-1. Open the template PNG  
+1. Open the PNG template  
 2. Replace the placeholder logo  
-3. Edit the website or text  
+3. Edit website, colors or layout  
 4. Export as PNG  
-5. Replace the file inside the `Assets/` folder  
+5. Replace the file inside `Assets/`  
 
 ---
 
-## 📦 Requirements
+## 🗺️ Roadmap
 
-The project uses only one external dependency:
+- [ ] Add more layout presets  
+- [ ] Add color filters  
+- [ ] Add drag‑and‑drop support  
+- [ ] Add batch processing  
+- [ ] Add LinkedIn‑optimized composite  
 
-Pillow>=9.0
+---
 
+## 🤝 Contributing
 
-A `requirements.txt` file is included.
+Pull requests are welcome.  
+For major changes, please open an issue first.
 
 ---
 
 ## 📜 License
 
-This project is licensed under the **MIT License**.  
-You are free to use, modify, and distribute it, as long as the original copyright notice is included.
+MIT License — free for personal and commercial use.
 
 ---
 
-## 🙌 Credits
+## 👤 Author
 
-Created by Rodrigo von Horn — São Paulo, Brazil.  
-Open-source and free for anyone to use or improve.
+**Rodrigo von Horn** — São Paulo, Brazil  
+Open‑source and free to improve.
